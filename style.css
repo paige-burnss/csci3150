@@ -18,10 +18,15 @@ h2{
 
 h3{
     font-weight: 500;
+    text-align: center;
 }
 
 a{
     color:#2a62b0;
+}
+
+li{
+    margin-bottom:10px;
 }
 
 .header{
@@ -33,8 +38,17 @@ a{
 }
 
 .picofme{
-    width: 14%;
+    width: 13%;
     float: left;
-    padding: 0px 75px 100px 0px;
+    padding: 0% 4% 2% 0%;
 }
 
+.nobullets{
+    list-style-type: none;
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 50px;
+}
+
+.intro{
+    margin-bottom: 20px;
+}
