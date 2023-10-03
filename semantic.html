@@ -3,54 +3,59 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/semantic.css" rel="stylesheet">
         <title>Semantics HTML5</title>
     </head>
     <body>
-        <header>
-            <h1>Proper use of HTML5 semantic markup</h1>
-        </header>
+        <div class="container">
+            <header>
+                <h1>Proper use of HTML5 semantic markup</h1>
+            </header>
 
-        <nav>
-            <h2>Main Navigation</h2>
-            <ul>
-                <li><a href="#latin-dummy">LINK 1</a></li>
-                <li><a href="#">LINK 2</a></li>
-                <li><a href="#">LINK 3</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <h2 class="sr-only">Main Navigation</h2>
+                <ul>
+                    <li><a href="#latin-dummy">LINK 1</a></li>
+                    <li><a href="#supplatin">LINK 2</a></li>
+                    <li><a href="#suppsocial">LINK 3</a></li>
+                </ul>
+            </nav>
 
-        <main>
-            <section id="latin-dummy">
-                <h2>Latin "Dummy" Text</h2>
+            <main>
+                <section id="latin-dummy">
+                    <h2>Latin "Dummy" Text</h2>
 
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nobis eligendi a, magni veniam voluptatum cum qui deleniti perferendis voluptates veritatis cumque doloremque vel atque quis officia odio reiciendis velit.
-                </p>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nobis eligendi a, magni veniam voluptatum cum qui deleniti perferendis voluptates veritatis cumque doloremque vel atque quis officia odio reiciendis velit.
+                    </p>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nobis eligendi a, magni veniam voluptatum cum qui deleniti perferendis voluptates veritatis cumque doloremque vel atque quis officia odio reiciendis velit.
+                    </p>
 
-                <figure>
-                    <img src="https://placehold.it/300x300" alt="verbal description">
-                    <figcaption>image title</figcaption>
-                </figure>
+                    <figure>
+                        <img src="https://placehold.it/300x300" alt="verbal description" width="400px">
+                        <figcaption>image title</figcaption>
+                    </figure>
 
-                <aside>
-                    <h2>Supplementary Latin Links</h2>
-                    <ul>
-                        <li><a href="#">how to learn latin</a></li>
-                    </ul>
-                </aside>
-            </section>
-        </main>
+                    <aside>
+                        <h2 id="supplatin">Supplementary Latin Links</h2>
+                        <ul>
+                            <li><a href="#">how to learn latin</a></li>
+                        </ul>
+                    </aside>
+                </section>
+            </main>
 
-        <aside>
-            <h2>Supplementary Social Media Links</h2>
-            <ul>
-                <li><a href="#">X</a></li>
-            </ul>
-        </aside>
+            <aside>
+                <h2 id="suppsocial">Supplementary Social Media Links</h2>
+                <ul>
+                    <li><a href="#">X</a></li>
+                </ul>
+            </aside>
 
-        <footer>
-            <p>Designed by Me</p>
-            <address>email@colorado.edu</address>
-            <small>&copy; 2021</small>
-        </footer>
+            <footer>
+                <p>Designed by Me</p>
+                <address>email@colorado.edu</address>
+                <small>&copy; 2021</small>
+            </footer>
+        </div> <!-- end container div-->
     </body>
 </html>
