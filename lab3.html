@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/lab3.css" rel="stylesheet">
+
+    <title>Lab 3</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Climate Change in Sweden</h1>
+        </header>
+
+        <nav>
+            <ul class="nobullets">
+                <li><a href="#myform">Survey</a> <span aria-hidden="”true”" class="material-icons">ballot</span></li>
+                <li><a href="#i">Introduction</a><span aria-hidden="”true”" class="material-icons">arrow_right_alt</span></li>
+                <li class="dropdown"> 
+                    <!-- <button type="button" class="dropdown__title" aria-expanded="false" aria-controls="dropdown2">  -->
+                    <a href="#gge">Greenhouse Gas Emissions</a> <span aria-hidden="”true”" class="material-icons">arrow_right_alt</span> 
+                    <!-- </button> -->
+                    <ul class="dropdown__menu nobullets" id="dropdown2">
+                        <li><a href="#re">Road Emissions</a></li>
+                        <li><a href="#ae">Aviation Emissions</a></li>
+                        <li><a href="#stats">Statistics on "large emitters" in Sweden</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <form id="myform" method="post">
+                    <fieldset>
+                        <legend>Tell us what you know!</legend>
+    
+                        <label for="name">
+                            What is your name? *required
+                            <input type="text" id="name" required>
+                        </label>
+    
+                        <label for="know">
+                            What do you know about Sweden? *required
+                            <input type="text" id="know" required>
+                        </label>
+
+                        <label for="know2">
+                            What do you know about climate change? *required
+                            <input type="text" id="know2" required>
+                        </label>
+    
+                        <label for="age">
+                            How old are you?
+                            <input type="number" id="age" placeholder="18">
+                        </label>
+
+                        <label for="your-email">
+                            What is your email?
+                            <input type="email" id="your-email">
+                            <ul class="inputRequirements nobullets">
+                                <li>*Note: This isn't required, only fill out this field if you want to be added to an email list</li>
+                            </ul>
+                        </label>
+    
+                        <input type="submit">
+    
+                    </fieldset>
+                </form>
+            </section>
+
+            <section>
+                <h2 id="i">Introduction</h2>
+                <p>Referencing article: <a href="https://en.wikipedia.org/wiki/Climate_change_in_Sweden">https://en.wikipedia.org/wiki/Climate_change_in_Sweden</a></p>
+                <p>Climate change in Sweden has received significant scientific, public and political attention. In 1896, Swedish chemist Svante Arrhenius was the first scientist to quantify global heating.[1] Sweden has a high energy consumtion per capita, but reducing the dependency on fossil energy has been on the agenda of cabinets of the Governments of Sweden since the 1970s oil crises.[2] In 2014 and 2016, Sweden was ranked #1 in the Global Green Economy Index (GGEI), because the Swedish economy produces relatively low emissions.[3] Sweden has had one of the highest usages of biofuel in Europe and aims at prohibiting new sales of fossil-cars, including hybrid cars, by 2035, and for an energy supply system with zero net atmospheric greenhouse gas emissions by 2045.[4]</p>
+                <p>Since the end of the 19th century, the average annual temperature has risen by almost two degrees Celsius, which can be compared to global warming of just over one degree.[5] Sweden's winter temperature is predicted to further increase by as much as 7°C (13°F) by 2100 in a worst case scenario. This will increase the percentage of precipitation that comes from rain instead of snow.[6] The Baltic Sea could see a surface water temperature increase of up to 4°C (7°F). This will decrease sea ice cover by the end of the century.[6]</p>
+                <p>The Swedish Civil Contingencies Agency (MSB) produces guidelines and resources to help citizens adapt to climate change.[7] The MSB keeps flood and landslide maps online, and guidelines for decision-making in case of disasters.[8]</p>
+                <p>Governmental efforts include policy instruments and legislation to mitigate and adapt to climate change. Policy instruments include taxing carbon dioxide emissions, issuing renewable energy certificates, subsidizing renewable energy initiatives, and making investments in R&D.</p>    
+            </section>
+            
+            <section>
+                <h2 id="gge">Greenhouse Gas Emissions</h2>
+                <p>Regarding greenhouse gas emission as a whole, the country has 4 targets: from the level of 1990, emissions should be reduced by 40% by the year 2020, by 63% by the year 2030, achieve net zero emissions by 2045, and reach negative emissions after this year.[4]</p>
+                <p>In 2020, 2 years before it was planned to be done, Sweden closed its last coal fired power station and became coal free, the third country in Europe after Belgium and Austria.[9] As of 2018, 54% of energy came from renewable sources. The country has a target to achieve 100% electricity from renewables by 2040.[10]</p>
+                <p>In 2019 Sweden placed number four in the Climate Change Performance Index by Germanwatch with 76.28 points out of 100. No country was granted position one to three in the list as "No country is doing enough to prevent dangerous climate change.”[11] Sweden ranked first in both the 2014 and 2016 editions of the Global Green Economy Index (GGEI) where Sweden performs well overall and within the topic of climate change performance where it is one of the top developed countries due to the relatively low emissions intensity of the Swedish economy.[3]</p>
+                <p>The following table shows the yearly total emission of greenhouse gas in Sweden in million tonnes of carbon dioxide equivalent (Mt CO2). Values for EU28 and world to compare trends. [12]</p>
+                <table>
+                    <caption>Yearly Greenhouse Gas Emissions in Sweden Compared to the EU and the World</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Year</th>
+                            <th scope="col">Sweden (Mt CO2)</th>
+                            <th scope="col">EU28 (Mt CO2)</th>
+                            <th scope="col">World (Mt CO2)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1970</td>
+                            <td>119</td>
+                            <td>5 507</td>
+                            <td>24 305</td>
+                        </tr>
+                        <tr>
+                            <td>1980</td>
+                            <td>104</td>
+                            <td>6 214</td>
+                            <td>29 989</td>
+                        </tr>
+                        <tr>
+                            <td>1990</td>
+                            <td>81</td>
+                            <td>5 744</td>
+                            <td>32 772</td>
+                        </tr>
+                        <tr>
+                            <td>2000</td>
+                            <td>81</td>
+                            <td>5 297</td>
+                            <td>35 962</td>
+                        </tr>
+                        <tr>
+                            <td>2010</td>
+                            <td>79</td>
+                            <td>4 957</td>
+                            <td>45 934</td>
+                        </tr>
+                        <tr>
+                            <td>2015</td>
+                            <td>67</td>
+                            <td>4 500</td>
+                            <td>49 113</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>The following table shows the yearly emission of greenhouse gas in Sweden in tonnes of carbon dioxide equivalent per capita (t CO2/capita). [12]</p>
+                <table>
+                    <caption>Yearly Greenhouse Gas Emissions Per Capita in Sweden Compared to the EU and the World</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Year</th>
+                            <th scope="col">Sweden (Mt CO2)</th>
+                            <th scope="col">EU28 (Mt CO2)</th>
+                            <th scope="col">World (Mt CO2)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1970</td>
+                            <td>14.7</td>
+                            <td>12.5</td>
+                            <td>6.6</td>
+                        </tr>
+                        <tr>
+                            <td>1980</td>
+                            <td>12.5</td>
+                            <td>13.4</td>
+                            <td>6.7</td>
+                        </tr>
+                        <tr>
+                            <td>1990</td>
+                            <td>9.5</td>
+                            <td>12.0</td>
+                            <td>6.62</td>
+                        </tr>
+                        <tr>
+                            <td>2000</td>
+                            <td>9.1</td>
+                            <td>10.9</td>
+                            <td>5.9</td>
+                        </tr>
+                        <tr>
+                            <td>2010</td>
+                            <td>8.4</td>
+                            <td>9.8</td>
+                            <td>6.6</td>
+                        </tr>
+                        <tr>
+                            <td>2015</td>
+                            <td>6.9</td>
+                            <td>8.9</td>
+                            <td>6.7</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>For the total carbon dioxide emissions in 2009, without other Greenhouse gases or land use, at 50.56 million tonnes Sweden ranked in place 60 out of 216 countries, below Libya 55.0 million tonnes, Serbia 52.3 million tonnes and Finland 52.15 million tonnes. For the per capita carbon dioxide emissions in 2009, at 5.58 tonnes per capita (t/capita), Sweden ranked shared place 82 out of 216 countries having the same emissions as Ukraine. This was only slightly below the carbon dioxide emissions per capita in China 5.83 t/capita.[13]</p>
+                <p>In 2000, Sweden ranked in place 76 out of 185 countries for the per capita greenhouse gas emissions when taking any land use changes into account. Without considering land use changes the country ranked at fifty eighth.[14]</p>
+                <p>Climate gas emission in 2018 of public workers in Sweden was 410,000 tonnes (196,000 workers, ca 2 tonnes pro person). Naturvardsverket encourage to reduce the annual emissions in public sector.[15] In 2019 nine first months Karolinska institutet have reduced 5% all air travels and 18% Swedish air travels compared to year 2018.[16]</p>
+                
+                <h3 id="re">Road Emissions</h3>
+                <p>Share of biofuel increased from 22% to 23% in 2019. Road emissions declined by 2% from 2018 to 2019. To reach transport climate target by 2030 road traffic climate emissions must decline 8% a year (Sven Hunhammar, director in Trafikverket).[17]</p>
+                
+                <h3 id="ae">Aviation Emissions</h3>
+                <p>According to Swedavia there was 40 million aviation travels in Sweden in 2019. Number decreased 9% in domestic flights and decreased 2% in international flights compared to 2018.[18] Swedish population in August 2019 was ca 10.3 million. This makes approximately in average 3.88 air travels per each citizen in Sweden in 2019.</p>
+                <p>Swedish aircraft greenhouse gas emissions equaled those of Swedish personal car traffic in 2017 according to the Swedish Environmental Protection Agency and a Chalmers University study published 31 May 2019.[19] Total emissions in 2017 was one tonne carbon dioxide equivalent per Swedish person. This is five times the global average.[20]</p>
+                <p>According to Swedish TV news, the Swedish government supports taxing aviation equal to private car traffic in 2019. Swedish TV news calculated that tax will make travel to Thailand 8,900 Swedish krona more expensive.[21]</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
