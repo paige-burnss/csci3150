@@ -53,6 +53,26 @@ body{
     width: 1px;
   }
 
+  .skip-link {
+    background: black;
+    color: #fff;
+    font-weight: 700;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-200%);
+  }
+  
+  .skip-link:focus {
+    transform: translateY(-100%);
+  }
+  
+  .skip-link {
+    /* Same as  before */
+    transition: transform 0.3s;
+  }
+  
+  
+
 input:focus {
     background: black;
     color: white;
@@ -111,4 +131,8 @@ th{
 td{
     border: 2px solid black;
     text-align: center;
+}
+
+mark{
+  background:lightseagreen;
 }
