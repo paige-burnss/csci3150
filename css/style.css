@@ -1,54 +1,176 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans&display=swap');
 
 body {
-    padding: 1% 5% 1% 5%;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
 }
 
-.container{
-    max-width: 1060px;
-    margin: 0 auto;
+header, footer {
+    text-align: center;
+}
+
+header, main, aside{
+    padding: 2em;
+}
+
+nav{
+    border: 20px white solid;
+    padding: 1em;
+    font-size: 1.1em;
+}
+
+main{
+    border: 20px white solid;
+}
+
+#side1{
+    border: 20px white solid;
+}
+
+footer{
+    padding: 1.25em;
 }
 
 h1 {
-    text-align: center;
     font-weight: 800;
-  }
+}
 
 h2{
     font-weight: 600;
-  }
+}
 
 a{
-    color:#2a62b0;
+    color:#404040;
+    text-decoration: none;
 }
 
-li{
-    margin-bottom:10px;
+a:hover{
+    color:lightslategray;
 }
 
-
-/* Custom Class Style */
-.header-img{
-    width: 60%;
-    border-radius: 15px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+p{
+    margin: 1.2em 0;
+    line-height: 1.8em;
 }
 
 .picofme{
-    width: 13%;
+    width: 25%;
     float: left;
-    padding: 0% 4% 2% 0%;
+    padding: 2% 4% 2% 0%;
 }
 
-.nobullets{
-    list-style-type: none;
-    padding: 0px 0px 0px 0px;
-    margin-bottom: 50px;
+hr{
+    margin-bottom:1.2em;
+    background-color:#404040;
+    height:3px;
 }
 
-.intro{
-    margin-bottom: 20px;
+#skip-link {
+    background: black;
+    color: #fff;
+    font-weight: 700;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-200%);
 }
+  
+#skip-link:focus {
+    transform: translateY(-100%);
+}
+  
+#skip-link {
+    transition: transform 0.3s;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    background: rgb(175, 222, 176);
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns:
+     1.25fr       3fr       1fr;
+    grid-template-areas:
+    "head1     head1     head1"
+    "nav1      nav1      nav1"
+    "side1     main1     main1"
+    "side1     main1     main1"
+    "side1     main1     main1"
+    "foot1     foot1     foot1";
+}
+
+header {grid-area: head1; background:white;}
+nav {grid-area: nav1; background:#B6FF97;}
+main {grid-area: main1; background: #f7f7f7; max-height: 100%;}
+#side1 {grid-area: side1; background: #F7f7f7;}
+footer {grid-area: foot1; background: white;}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+    
+nav ul li {
+    list-style: none
+}
+    
+  
+@media screen and (min-width: 641px) and (max-width: 900px)  {
+    .container {
+        grid-template-columns:
+        1fr 1fr;
+        grid-template-areas:
+        "head1 head1"
+        "nav1  nav1"
+        "side1 side1"
+        "main1 main1"
+        "foot1 foot1";
+    }
+}
+    
+@media screen and (max-width: 640px)  {
+    .container {
+    grid-template-columns:
+       1fr;
+    grid-template-areas:
+      "head1"
+      "nav1"
+      "side1"
+      "main1"
+      "foot1";
+    }
+    
+    nav ul {
+      flex-flow: column nowrap;
+      text-align: center;
+    }
+  
+    nav ul li a {
+      display: block;
+      padding: 10px 5px;
+      margin: 5px;
+      background: white;
+    }
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }

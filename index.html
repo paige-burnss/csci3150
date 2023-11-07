@@ -12,56 +12,40 @@
 <body>
     <div class="container">
         <header>
-            <img class="header-img" src="./photos/index/udheader.jpg" alt="silohettes of many humans with varying range of ability">
-            <h1> Paige Burns - Universal Design Class Portal</h1>
+            <h1>Paige Burns - Universal Design Class Portal</h1>
+            <a class="skip-link" href="#maincontent">Skip to main content</a>
         </header>
+
+        <nav>
+            <h2 class="sr-only">Lab Navigation</h2>
+            <ul>
+                <li><a href="lab2.html">Lab 2</a></li>
+                <li><a href="lab3.html">Lab 3</a></li>
+                <li><a href="lab4.html">Lab 4</a></li>
+            </ul>
+        </nav>
 
         <main>
             <section>
-                <h2>Projects:</h2>
-                <ul class="nobullets">
-                    <li>Lab 2:
-                        <ul>
-                            <li> <a href="lab2.html">Accessibile Wiki Article &#8594;</a> </li>
-                            <li><a href="https://github.com/paige-burnss/csci3150/blob/main/lab2.html"> Lab 2 Github Code &#8594; </a></li>
-                        </ul>
-                    </li>
-                    <li>Lab 3:
-                        <ul>
-                            <li><a href="lab3.html">Tables, Forms, Tabbed Browsing, and Screen Reading Article &#8594;</a></li>
-                            <li><a href="https://github.com/paige-burnss/csci3150/blob/main/lab3.html">Lab 3 Github &#8594;</a></li>
-                        </ul>
-                    </li>
-                    <li>Lab 4:
-                        <ul>
-                            <li> <a href="lab4.html">Accessibile CSS Layout &#8594;</a> </li>
-                            <li><a href="https://github.com/paige-burnss/csci3150/blob/main/lab4.html"> Lab 4 Github Code &#8594; </a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-
-            <hr>
-        
-            <section>
-                <h2>About Me:</h2>
+                <h2 id="about">About Me:</h2>
                 <img class="picofme" src="./photos/index/picofme.JPG" alt="Paige Burns(21 years old, brown hair) in a neon green jumpsuit">
-                <p class="intro">Hey there, I’m Paige! I’m a fourth year student at the University of Colorado Boulder studying computer
-                    science and marketing. Here at CU I am a member of programs such as the Leeds Scholars 
-                    Program and Presidents Leadership Class, as well as clubs such as Leeds Consulting Group.
-                </p>
-                <p class="intro"> I love product design becasue it is the perfect combination of art, business, 
-                    and engineering. It has given me opportunities to find creative ways to help others 
-                    and solve problems. 
-                </p>
-                <p class="intro"> Outside of work and school, I am a huge book and movie nerd. I am also a Colorado Native, 
-                    and I love to stay active and get outdoors. I love to snowboard, hike, and go paddle
-                    boarding. I also love to travel have been to 23 national parks and 16 countries! In fact, 
-                    in 2023, I lived abroad in Sweden while studying at Uppsala University for a semester.
-                </p>
+                <p>Hey there, I’m Paige! I’m a fourth year student at the University of Colorado Boulder studying computer science and marketing. Here at CU I am a member of programs such as the Leeds Scholars Program and Presidents Leadership Class, as well as clubs such as Leeds Consulting Group.</p>
+                <p>I love product design becasue it is the perfect combination of art, business, and engineering. It has given me opportunities to find creative ways to help others and solve problems. </p>
+                <p>Outside of work and school, I am a huge book and movie nerd. I am also a Colorado Native, and I love to stay active and get outdoors. I love to snowboard, hike, and go paddle boarding. I also love to travel have been to 23 national parks and 16 countries! In fact, in 2023, I lived abroad in Sweden while studying at Uppsala University for a semester.</p>
             </section>
         </main>
-    </div> <!-- end div container -->
+
+        <aside id="side1">
+            <h2 id="labs">Lab Topics:</h2>
+            <p>Lab 2: Accessible Wiki Article</p>
+            <p>Lab 3: Tables, Forms, Tabbed Browsing, and Screen Reading</p>
+            <p>Lab 4: Accessible CSS Layout</p>
+        </aside>
+
+        <footer>
+            <small>Designed by Paige Burns</small>
+        </footer>
+    </div>
 </body>
 
 </html>

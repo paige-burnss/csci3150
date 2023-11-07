@@ -86,7 +86,7 @@ a.white:hover{
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
     background: rgb(175, 222, 176);
     display: grid;
