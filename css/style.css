@@ -65,7 +65,7 @@ hr{
     height:3px;
 }
 
-#skip-link {
+.skip-link {
     background: black;
     color: #fff;
     font-weight: 700;
@@ -74,11 +74,11 @@ hr{
     transform: translateY(-200%);
 }
   
-#skip-link:focus {
-    transform: translateY(-100%);
+.skip-link:focus {
+    transform: translateY(0%);
 }
   
-#skip-link {
+.skip-link {
     transition: transform 0.3s;
 }
 
