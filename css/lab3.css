@@ -60,18 +60,16 @@ body{
     padding: 4px;
     position: absolute;
     transform: translateY(-200%);
-  }
+}
   
-  .skip-link:focus {
-    transform: translateY(-100%);
-  }
+.skip-link:focus {
+    transform: translateY(0%);
+}
   
-  .skip-link {
-    /* Same as  before */
+.skip-link {
     transition: transform 0.3s;
-  }
-  
-  
+}
+   
 
 input:focus {
     background: black;
