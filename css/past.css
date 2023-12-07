@@ -2,14 +2,14 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
+    font-size: 16px;
 }
 
 header, footer {
     text-align: center;
 }
 
-header, main, aside{
+header, aside{
     padding: 2em;
 }
 
@@ -19,12 +19,17 @@ nav{
     font-size: 1.1em;
 }
 
-main{
+#side1{
     border: 20px white solid;
 }
 
-#side1{
+#side2{
     border: 20px white solid;
+}
+
+#r, #d, #t, #it, #f{
+    border: 20px white solid;
+    padding: 2em;
 }
 
 footer{
@@ -33,19 +38,43 @@ footer{
 
 h1 {
     font-weight: 800;
+    padding: .2em 0;
 }
 
-h2{
+h2 {
+    font-weight: 700;
+    padding: .2em 0;
+}
+
+h3, h4{
     font-weight: 600;
+    padding: .2em 0;
 }
 
 a{
-    color:#404040;
+    color:#3e53be;
+}
+
+a:hover{
+    color:darkgrey;
+}
+
+.nav1 {
+    color:black;
+    text-decoration: none;
+}
+
+.nav1:hover{
+    color: darkgrey;
+}
+
+a{
+    color:#3e53be;
     text-decoration: none;
 }
 
 a:hover{
-    color:lightslategray;
+    color:darkgrey;
 }
 
 p{
@@ -53,16 +82,56 @@ p{
     line-height: 1.8em;
 }
 
-.picofme{
-    width: 250px;
-    float: left;
-    padding: 1em 1em 0em 0em;
-}
-
 hr{
     margin-bottom:1.2em;
     background-color:#404040;
     height:3px;
+}
+
+mark{
+    background:#bae2ff;
+}
+
+.pic{
+    width: 40%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em 1em 0em 0em;
+}
+
+.img1{
+    text-align: center;
+}
+
+.pic1{
+    width: 250px;
+    float: right;
+    display: inline-block;
+    padding: 1.2em 1.5em 1.5em 1.5em;
+}
+
+.pic2{
+    width: 70%;
+    float: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.2em 1.5em 1.5em 1.5em;
+}
+
+.unlist{
+    padding-left: 2.5em;
+    line-height: 1.8em;
+}
+
+ol{
+    padding-left: 2.5em;
+    line-height: 1.8em;
+}
+
+details {
+    margin: 1em 0;
 }
 
 .skip-link {
@@ -91,27 +160,28 @@ hr{
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1100px;
     margin: 0 auto;
     background: rgb(175, 222, 176);
     display: grid;
     width: 100vw;
     height: 100vh;
     grid-template-columns:
-     1.5fr       3fr       1fr;
+     1fr       2fr       1.75fr;
     grid-template-areas:
     "head1     head1     head1"
     "nav1      nav1      nav1"
-    "side1     main1     main1"
-    "side1     main1     main1"
-    "side1     main1     main1"
+    "side1     side1     side2"
+    "main1     main1     main1"
+    "main1     main1     main1"
     "foot1     foot1     foot1";
 }
 
 header {grid-area: head1; background:white;}
-nav {grid-area: nav1; background:#B6FF97;}
-main {grid-area: main1; background: #f7f7f7; max-height: 100%;}
+nav {grid-area: nav1; background:#97D4FF;}
+main {grid-area: main1; background: #F7f7f7; max-height: 100%;}
 #side1 {grid-area: side1; background: #F7f7f7;}
+#side2 {grid-area: side2; background: #F7f7f7;}
 footer {grid-area: foot1; background: white;}
 
 nav ul {
@@ -132,7 +202,7 @@ nav ul li {
         grid-template-areas:
         "head1 head1"
         "nav1  nav1"
-        "side1 side1"
+        "side1 side2"
         "main1 main1"
         "foot1 foot1";
     }
@@ -146,6 +216,7 @@ nav ul li {
       "head1"
       "nav1"
       "side1"
+      "side2"
       "main1"
       "foot1";
     }
