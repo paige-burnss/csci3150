@@ -36,10 +36,6 @@ footer{
     padding: 1.25em;
 }
 
-section{
-    padding: 1em 0em 0em 0em;
-}
-
 h1 {
     font-weight: 800;
 }
@@ -51,6 +47,10 @@ h2{
 h3{
     font-weight: 600;
     margin: 0.5em 0;
+}
+
+.mainsec{
+    padding: 1em 0em 0em 0em;
 }
 
 a{
@@ -306,8 +306,7 @@ footer {grid-area: foot1; background: white;}
     grid-template-areas:
     "head1     head1     head1"
     "nav1      nav1      nav1"
-    "main1     main1     main1"
-    "side1     side1     side1"
+    "main1     main1     side1"
     "side2     side2     side2"
     "foot1     foot1     foot1";
 }
