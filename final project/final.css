@@ -49,6 +49,11 @@ h3{
     margin: 0.5em 0;
 }
 
+h4{
+    font-weight: 500;
+    margin: 1em 0;
+}
+
 .mainsec{
     padding: 1em 0em 0em 0em;
 }
@@ -94,7 +99,7 @@ details{
 }
 
 ul{
-    line-height: 1.5em;
+    line-height: 1.8em;
 }
 
 .guide{
@@ -120,7 +125,7 @@ ol{
   }
 
   .containers {
-    padding: 2px 16px;
+    padding: 16px 16px;
   }
 
   .bigpic{
@@ -129,6 +134,42 @@ ol{
     margin-left: auto;
     margin-right: auto;
   }
+
+  .bigpic1{
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px black solid;
+  }
+
+  .bigpic2{
+    width:70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px black solid;
+  }
+
+  mark{
+    background-color:rgb(233, 215, 255);
+  }
+
+  pre{
+    text-align: left;
+  }
+
+  /* table, th, td {
+    border-collapse: collapse;
+}
+table {
+    margin-bottom: 30px;
+}
+td{
+    border: 2px solid black;
+    padding-right: 70px;
+    text-align: center;
+} */
 
 .skip-link {
     background: black;

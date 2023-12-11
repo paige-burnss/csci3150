@@ -28,22 +28,103 @@
         <main id = "maincontent">
             <section>
                 <h2 id="what">How can you implement Universal Design?</h2>
+
+                <h3>Mobile First Development</h3>
+                <img src="./photos/mfdesign.png" alt="Adaptive v Responsive v Mobile First Design" class="bigpic">
+                <p>This type of development ensures that sites are responsive, or able to fit the screens of different devices automatically and display the content in a way that people are still able to understand it. Due to the fact that mobile internet usage surpassed desktop usage in 2016, mobile first development is more important than ever. </p>
+                <p>Mobile-first design means that <mark>web developers start the product design from the mobile end</mark>, which exists with more restrictions. They then expand its features and translate them towards a tablet and desktop version or other devices that may need a different set of dimensions.</p>
+
+                <h3>HTML Elements</h3>
+                <h4>Semantics</h4>
+                <p>In the past, code only had to be understood by the developer. These days, its way better to practice using <mark>semantic elements, or elements that communicate to the developer and the user about what each code snippet is used for</mark>. For example, developers used to use <code>&lt;div&gt;</code> to section out different parts of a website, but now developers are encouraged to used the following containers for different parts of their website:</p>
+                <ul class="guide">
+                    <li><code>&lt;header&gt;</code> &#8594; information that appears at the top of a site</li>
+                    <li><code>&lt;nav&gt;</code> &#8594; navigation bar for article or website</li>
+                    <li><code>&lt;main&gt;</code> &#8594; main webpage information</li>
+                    <li><code>&lt;aside&gt;</code> &#8594; side or extra information on a website</li>
+                    <li><code>&lt;footer&gt;</code> &#8594; information that appears at the bottom of each webpage</li>
+                </ul>
+                <p>As see above, you can assume the content of each section based on the name of the item. When we write semantically correct HTML, we’re letting the browser know what type of content it’s dealing with and how that content relates to other content. By doing this, assistive technology is more easily able to do its job because it has a structure that it can work with.</p>
+                
+                <h4>Screen Reader Only</h4>
+                <p>There are some elements that <mark>visually are very easy to understand what purpose they perform, but with a screenreader it isn't as clear</mark>. That is why you can create items to only appear for screen readers.</p>
+                <p>In order to do this, you first need to create a CSS class with the following design specifications:</p>
+    <pre><code>
+    .sr-only {
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }</code></pre>
+                <p>Then, you need to add this specific class for the item that is only for screen readers:</p>
+    <pre><code>
+    &lt;h2 class="sr-only"&gt;
+    </code></pre>
+                
+                <h4>Skip Navigation</h4>
+                <p>A skip navigation link is a <mark>technique for facilitating similarly efficient access for users with certain disabilities</mark>. A skip navigation link is implemented by placing a named anchor at the point on the page where the main content begins.</p>
+                <p>To do this, first input the following code into your CSS file:</p>
+    <pre><code>
+    .skip-link {
+        background: black;
+        color: #fff;
+        font-weight: 700;
+        padding: 4px;
+        position: absolute;
+        transform: translateY(-200%);
+    }  
+    
+    .skip-link:focus {
+        transform: translateY(0%);
+    } 
+
+    .skip-link {
+        transition: transform 0.3s;
+    }</code></pre>
+                <p>Then, you need to add this line of code to the start of the <code>&lt;body&gt;</code> part of your code.</p>
+    <pre><code>
+    &lt;a class="skip-link" href="#maincontent"&gt;Skip to main content&lt;/a&gt;
+    </code></pre>
+                <p>To utilize this on your webpage, navigate to the page that has implemented skip navigation, then click the "Tab" button, and the skip navigation link will appear.</p>
+
+                <h3>Testing for Accessibility</h3>
+                <h4>Nu HTML Checker</h4>
+                <img src="./photos/nuhtmlcheck.png" alt="Screenshot of Nu HTML Checker tool" class="bigpic2">
+                <p>This tool helps you catch <mark>unintended mistakes in your HTML, CSS, and SVG</mark>. The validation program compares the HTML code in the web page with the rules of the accompanying doctype and tells you if and where those rules have been broken.</p>
+
+                <h4>WAVE Web Accessibility Evaluation Tool</h4>
+                <img src="./photos/wavetool.png" alt="Screenshot of Wave Tool" class="bigpic1">
+                <p>WAVE is a suite of evaluation tools that helps authors make their web content more accessible to individuals with disabilities. WAVE can <mark>identify many accessibility and Web Content Accessibility Guideline (WCAG) errors</mark>, but also facilitates human evaluation of web content.</p>
+                
+                <h4>Chrome HTML Outline Extension</h4>
+                <img src="./photos/htmloutliner.png" alt="Screenshot of HTML5 Outliner Extension tool on Chrome" class="bigpic2">
+                <p>This tool <mark>generates a navigable page outline with heading and sectioning elements</mark>, in order to make sure your page layout and heirarchy makes sense.</p>
+                
             </section>
         </main>
 
         <aside id="side1">
-            <h2 id="issues">UD Developments in the News</h2>
-            <p><a href="https://www.forbes.com/sites/annefield/2023/11/22/disability-accelerator-initiative-targets-the-next-generation-of-radically-inclusive-technology/?sh=19fed8fb658c" class="source">Disability Accelerator Initiative Targets ‘The Next Generation Of Radically Inclusive Technology’ &#8594</a></p>
-            <p><a href="https://koreajoongangdaily.joins.com/news/2023-10-12/culture/artsDesign/Public-Design-Festival-2023-shines-light-on-accessible-design-in-Busan/1888557" class="source">Public Design Festival 2023 shines light on accessible design in Busan &#8594</a></p>
-            <p><a href="https://www.thenews.com.pk/print/1112185-rethinking-education" class="source">Rethinking education &#8594</a></p>
-            <p><a href="https://theconversation.com/lego-releases-braille-bricks-heres-how-five-other-brands-could-make-their-toys-more-accessible-212630" class="source">Lego releases braille bricks – here’s how five other brands could make their toys more accessible &#8594</a></p>
-            <p><a href="https://www.facultyfocus.com/articles/equality-inclusion-and-diversity/bridging-the-gap-overcoming-barriers-in-higher-ed-for-students-with-disabilities-including-neurodivergent-learners/" class="source">Bridging the Gap: Overcoming Barriers in Higher Ed for Students with Disabilities including Neurodivergent Learners &#8594</a></p>
-            <p><a href="https://www.finehomesandliving.com/featured/universal-design-creating-homes-for-all-ages-and-abilities/article_9ce659e2-2ff3-11ee-aad2-1f59e2d11122.html" class="source">Universal Design: Creating Homes for All Ages and Abilities &#8594</a></p>
+            <h2 id="issues">Universal Design Developments in the News</h2>
+            <p><a href="https://www.forbes.com/sites/annefield/2023/11/22/disability-accelerator-initiative-targets-the-next-generation-of-radically-inclusive-technology/?sh=19fed8fb658c" class="source">Disability Accelerator Initiative Targets ‘The Next Generation Of Radically Inclusive Technology’ &#8594;</a></p>
+            <p><a href="https://koreajoongangdaily.joins.com/news/2023-10-12/culture/artsDesign/Public-Design-Festival-2023-shines-light-on-accessible-design-in-Busan/1888557" class="source">Public Design Festival 2023 shines light on accessible design in Busan &#8594;</a></p>
+            <p><a href="https://www.thenews.com.pk/print/1112185-rethinking-education" class="source">Rethinking education &#8594;</a></p>
+            <p><a href="https://theconversation.com/lego-releases-braille-bricks-heres-how-five-other-brands-could-make-their-toys-more-accessible-212630" class="source">Lego releases braille bricks – here’s how five other brands could make their toys more accessible &#8594;</a></p>
+            <p><a href="https://www.facultyfocus.com/articles/equality-inclusion-and-diversity/bridging-the-gap-overcoming-barriers-in-higher-ed-for-students-with-disabilities-including-neurodivergent-learners/" class="source">Bridging the Gap: Overcoming Barriers in Higher Ed for Students with Disabilities including Neurodivergent Learners &#8594;</a></p>
+            <p><a href="https://www.finehomesandliving.com/featured/universal-design-creating-homes-for-all-ages-and-abilities/article_9ce659e2-2ff3-11ee-aad2-1f59e2d11122.html" class="source">Universal Design: Creating Homes for All Ages and Abilities &#8594;</a></p>
         </aside>
 
         <aside id="side2">
             <h2 id="sources">Sources</h2>
-            <p></p>
+            <p><a href="https://www.techmagic.co/blog/best-practices-for-mobile-first-design/" class="source">Tech Magic: Best Practices for Mobile First Design &#8594;</a></p>
+            <p><a href="http://web-accessibility.carnegiemuseums.org/foundations/semantic/#:~:text=When%20we%20write%20semantically%20correct,that%20it%20can%20work%20with." class="source">Carnegie Museums Web Accessibility Guidelines &#8594;</a></p>
+            <p><a href="https://www.boisestate.edu/webguide/publishing/wave-web-accessibility-evaluation-tool/#:~:text=WAVE%20is%20a%20suite%20of,human%20evaluation%20of%20web%20content." class="source">Boise State University WAVE &#8594;</a></p>
+            <p><a href="https://chromewebstore.google.com/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo?pli=1" class="source">Chrome Webstore &#8594;</a></p>
+            <p><a href="https://www.washington.edu/accesscomputing/what-skip-navigation-link#:~:text=A%20%22skip%20navigation%22%20link%20is,content%20begins%20(e.g.%2C%20)." class="source">University of Washington on Skip Navigation &#8594;</a></p>
         </aside>
 
         <footer>
