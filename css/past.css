@@ -121,16 +121,6 @@ mark{
     padding: 1.2em 1.5em 1.5em 1.5em;
 }
 
-.vid{
-    width: 70%;;
-    float: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1em 1em 1em 1em;
-    border: none;
-}
-
 .unlist{
     padding-left: 2.5em;
     line-height: 1.8em;
