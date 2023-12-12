@@ -147,6 +147,7 @@ details {
 
 .designpic{
     width: 250px;
+    float: center;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
